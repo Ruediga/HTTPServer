@@ -44,11 +44,12 @@ bool removeFile(const char* path)
     return true;      
 }
 
-std::stringstream &readFile(const char *path)
+std::ifstream readFile(const char *path)
 {
-    std::ofstream file(path, std::ios::app);
+    std::ifstream file(path, std::ios::app);
     if (!file.is_open())
-        return false;
+    
+    return 
 }
 
 bool parseFile(FileData &fdata)
