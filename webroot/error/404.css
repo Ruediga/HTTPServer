@@ -1,0 +1,51 @@
+/* Toggle light / dark mode colors */
+:root {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+  --color-button: #4b4b4b;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+    --color-button: #a0a0a0;
+  }
+}
+
+/* Center block in the middle */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* specific options */
+#notfound {
+  color: var(--color-fg);
+  font-family: Courier New;
+  font-size: 2em;
+  text-shadow: 0em 0em 1em var(--color-fg), 0em 0em 0.5em var(--color-fg);
+  text-align: center;
+}
+
+#return-home {
+  background: var(--color-button);
+  padding: 0.5em 1em;
+  font-family: Courier New;
+  font-size: 1.5em;
+  color: var(--color-fg);
+  cursor: pointer;
+  border-radius: 1em;
+  text-decoration: none;
+}
